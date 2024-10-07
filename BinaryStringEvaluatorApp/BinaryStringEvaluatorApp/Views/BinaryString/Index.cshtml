@@ -1,0 +1,25 @@
+﻿@model BinaryStringEvaluatorApp.Models.BinaryStringViewModel
+@*
+*@
+
+@{
+    ViewData["Title"] = "Binary String Evaluator";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Index" asp-controller="BinaryString">
+    <div class="form-group">
+        <label for="BinaryString">Enter Binary String:</label>
+        <input type="number" class="form-control" id="BinaryString" placeholder="Please Enter Binary String Here" name="BinaryString" value="@Model.BinaryString" required />
+    </div>
+    </br>
+    <button type="submit" class="btn btn-primary">Evaluate</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Result))
+{
+    <div class="alert alert-info mt-3">
+        @Model.Result
+    </div>
+}
