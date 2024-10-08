@@ -26,9 +26,16 @@ Input: 1100
 
 
 Output: Test Binary String: 1100, Expected: GOOD, Got: GOOD
+
+![enter image description here](./doc/Binary_test1.png)
+
 Input: 1001
 
 Output: Test Binary String: 1001, Expected: GOOD, Got: NOT GOOD
+
+![enter image description here](./doc/Binary_test2.png)
+
+
 
 # Project Structure
 Controllers: Contains the BinaryStringController that handles user input and result display.
